@@ -1,4 +1,4 @@
-=== WPSSO App Meta ===
+=== WPSSO App Meta: iPhone, iPad, and Google Play App Meta Tags ===
 Contributors: jsmoriss
 Donate Link: http://surniaulula.com/extend/plugins/wpsso-am/
 Tags: wpsso, app, iphone, ipad, googleplay, meta, tags, itunes
