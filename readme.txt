@@ -40,7 +40,7 @@ WPSSO extension to provide Apple Store (iTunes) and Google Play App meta tags fo
 * Adds the **Twitter App Card** meta tags to your webpages for social sharing.
 
 <blockquote>
-<p><a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> plugin (version 2.6.5 and up) is required to use the WPSSO AM extension.</p>
+<p><a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> plugin (version 2.6.6 and up) is required to use the WPSSO AM extension.</p>
 
 <p>You can use the <em>Free version</em> of WPSSO AM with either WPSSO Free or Pro, but the <strong><a href="http://surniaulula.com/extend/plugins/wpsso-am/">WPSSO AM Pro version</a> requires the use of <a href="http://surniaulula.com/extend/plugins/wpsso/">WPSSO Pro</a></strong> (i.e. you must purchase WPSSO Pro as well).</p>
 </blockquote>
