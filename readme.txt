@@ -62,3 +62,7 @@ WPSSO extension to include Apple Store (iTunes) iPhone, iPad, and Google Play Ap
 
 == Upgrade Notice ==
 
+= 0.3 =
+
+Initial Release.
+
