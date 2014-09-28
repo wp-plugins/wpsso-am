@@ -31,6 +31,7 @@ WPSSO extension to provide Apple Store (iTunes) and Google Play App meta tags fo
 
 **Pro / Power-User Version**
 
+* <strong>No Risk 30 Day Refund Policy</strong>
 * Add an *App Product* tab to WPSSO's Social Settings metabox to enter the:
 	* App Store Territory
 	* Apple Store iPhone App ID, Name, and Custom URL Scheme.
