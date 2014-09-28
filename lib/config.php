@@ -18,7 +18,7 @@ if ( ! class_exists( 'WpssoAmConfig' ) ) {
 					'version' => '0.3',	// plugin version
 					'short' => 'WPSSO AM',
 					'name' => 'WPSSO App Meta (WPSSO AM)',
-					'desc' => 'WPSSO extension to include Apple Store (iTunes) iPhone, iPad, and Google Play App meta tags in your webpage headers.',
+					'desc' => 'WPSSO extension to provide Apple Store (iTunes) and Google Play App meta tags for Apple\'s mobile Safari and Twitter\'s App Card.',
 					'slug' => 'wpsso-am',
 					'base' => 'wpsso-am/wpsso-am.php',
 					'img' => array(
