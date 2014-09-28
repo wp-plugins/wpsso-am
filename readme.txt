@@ -16,9 +16,9 @@ WPSSO extension for Apple Store (iTunes) and Google Play App meta tags for Apple
 <p><img src="//ps.w.org/wpsso-am/assets/icon-256x256.jpg?rev=" width="256" height="256" style="max-width:none;border:1px solid #ddd;margin-right:30px;border-radius:3px;" /></p>
 </td><td valign="top">
 
-<p>WPSSO App Meta (WPSSO AM) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> plugin, extending its features with additional settings pages, tabs, and options to add iPhone, iPad, and Google Play App meta tags to your webpages. WPSSO AM is <strong><em>fast</em></strong>, <strong><em>efficient</em></strong>, and &mdash; using WPSSO as its framework &mdash; provides <strong><em>accurate</em></strong> information to social websites about your webpage content.</p>
+<p>WPSSO App Meta (WPSSO AM) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> plugin, extending its features with additional settings pages, tabs, and options, to include iPhone, iPad, and Google Play App meta tags in your webpages (for Apple's mobile Safari and Twitter's App Card). WPSSO AM is <strong><em>fast</em></strong>, <strong><em>efficient</em></strong>, and &mdash; using WPSSO as its framework &mdash; provides <strong><em>accurate</em></strong> information about your content to social websites.</p>
 
-<p><strong>You can download the <a href="https://wordpress.org/plugins/wpsso-am/">Free version of WPSSO AM on WordPress.org</a> and <a href="(http://surniaulula.com/extend/plugins/wpsso-am/">purchase Pro license(s) here</strong>.</p>
+<p><strong>You can download the <a href="https://wordpress.org/plugins/wpsso-am/">Free version of WPSSO AM on WordPress.org</a> and <a href="(http://surniaulula.com/extend/plugins/wpsso-am/">purchase Pro license(s) on SurniaUlula.com</strong>.</p>
 
 </td></tr></table>
 
