@@ -182,10 +182,10 @@ if ( ! class_exists( 'WpssoAmAppmeta' ) ) {
 							to jump from your website, to the same content in the mobile App.';
 							break;
 						case 'tooltip-am_ap_ast':
-							$text = 'TODO';
+							$text = 'The App Store country providing your App.';
 							break;
 						case 'tooltip-am_ap_add_to':
-							$text = 'TODO';
+							$text = 'Include the "App Product" tab in the Social Settings metabox on Posts, Pages, etc.';
 							break;
 					}
 					break;
