@@ -36,8 +36,8 @@ WPSSO extension to provide Apple Store (iTunes) and Google Play App meta tags fo
 	* Apple Store iPhone App ID, Name, and Custom URL Scheme.
 	* Apple Store iPad App ID, Name, and Custom URL Scheme.
 	* Google Play App ID, Name, and Custom URL Scheme.
-* Adds the Twitter App Card meta tags based on your App details.
 * Include the "App Product" on Posts, Pages, and custom post types (ie. Product pages).
+* Adds the **Twitter App Card** meta tags to your webpages for social sharing.
 
 <blockquote>
 <p><a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> plugin (version 2.6.5 and up) is required to use the WPSSO AM extension.</p>
