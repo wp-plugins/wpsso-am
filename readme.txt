@@ -66,6 +66,9 @@ WPSSO extension to provide Apple Store (iTunes) and Google Play App meta tags fo
 
 == Screenshots ==
 
+1. The WPSSO AM Settings Page
+2. The App Product Tab
+
 == Changelog ==
 
 = Version 1.0 =
