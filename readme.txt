@@ -18,12 +18,15 @@ WPSSO extension to provide Apple Store (iTunes) and Google Play App meta tags fo
 
 <blockquote>
 <p>Do you have an Apple Store App for your website that you'd like to <strong>promote as a banner in Apple's mobile Safari</strong>?</p>
-<p>Does your website sell Apple Store Apps and you'd like to support the <strong>Twitter App Card for your App product pages</strong>?</p>
+</blockquote>
+
+<blockquote>
+<p>Does your website sell one or more Apple Store Apps, and you'd like to support the <strong>Twitter App Card for your App product pages</strong>?</p>
 </blockquote>
 
 <p>WPSSO App Meta (WPSSO AM) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> plugin, extending its features with additional settings pages, tabs, and options, to include iPhone, iPad, and Google Play App meta tags in your webpages (for Apple's mobile Safari and Twitter's App Card). WPSSO AM is <strong><em>fast</em></strong>, <strong><em>efficient</em></strong>, and &mdash; using WPSSO as its framework &mdash; provides <strong><em>accurate</em></strong> information about your content to social websites.</p>
 
-<p><strong>You can download the <a href="https://wordpress.org/plugins/wpsso-am/">Free version of WPSSO AM on WordPress.org</a> and <a href="(http://surniaulula.com/extend/plugins/wpsso-am/">purchase Pro license(s) on SurniaUlula.com</a></strong> (includes a <em>No Risk 30 Day Refund Policy</em>).</p>
+<p><strong>You can download the <a href="https://wordpress.org/plugins/wpsso-am/">Free version of WPSSO AM on WordPress.org</a> and <a href="(http://surniaulula.com/extend/plugins/wpsso-am/">purchase Pro license(s) on SurniaUlula.com</a></strong> (includes a <em>No Risk 30 Day Refund Policy</em>). The banner advertisement feature for mobile Safari is included with the Free version, where-as the Twitter App Card feature is provided with the Pro version.</p>
 
 </td></tr></table>
 
@@ -32,7 +35,7 @@ WPSSO extension to provide Apple Store (iTunes) and Google Play App meta tags fo
 **Free / Basic Version**
 
 * Create an optional **banner advertisement** in Apple's mobile Safari for your website's Apple Store App.
-* Include the **banner advertisement** on index / archive webpages, a static home page, Posts, Pages, and custom post types (ie. Product pages).
+* Include the **banner advertisement** on index and archive webpages, a static home page, Posts, Pages, and custom post types (ie. Product pages).
 
 **Pro / Power-User Version**
 
