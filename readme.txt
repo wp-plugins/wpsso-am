@@ -13,7 +13,7 @@ WPSSO extension to provide Apple Store (iTunes) and Google Play App meta tags fo
 == Description ==
 
 <table><tr><td valign="top">
-<p><img src="//ps.w.org/wpsso-am/assets/icon-256x256.png?rev=" width="256" height="256" style="max-width:none;margin-right:30px;" /></p>
+<p><img src="//ps.w.org/wpsso-am/assets/icon-256x256.png?rev=" width="256" height="256" style="max-width:none;margin-right:40px;" /></p>
 </td><td valign="top">
 
 <p><strong>Do you have an Apple Store App for your website that you'd like to promote as a banner in Apple's mobile Safari?</strong></p>
