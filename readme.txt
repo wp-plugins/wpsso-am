@@ -35,14 +35,31 @@ WPSSO extension to provide Apple Store (iTunes) and Google Play App meta tags fo
 
 **Pro / Power-User Version**
 
-* <strong>No Risk 30 Day Refund Policy</strong>
+* **No Risk 30 Day Refund Policy**
 * Add an *App Product* tab to WPSSO's Social Settings metabox with additional options:
-	* The App Store Territory.
-	* An Apple Store iPhone App ID, Name, and Custom URL Scheme.
-	* An Apple Store iPad App ID, Name, and Custom URL Scheme.
-	* A Google Play App ID, Name, and Custom URL Scheme.
+	* App Store Territory.
+	* Apple Store iPhone App ID, Name, and Custom URL Scheme.
+	* Apple Store iPad App ID, Name, and Custom URL Scheme.
+	* Google Play App ID, Name, and Custom URL Scheme.
 * Include the *App Product* tab on Posts, Pages, and custom post types (ie. Product pages).
 * Adds the **Twitter App Card** meta tags to *App Product* webpages for social sharing.
+
+= App Meta Tags =
+
+* **Apple mobile Safari Meta Tags**
+	* apple-itunes-app
+
+* **Twitter App Card Meta Tags** (Pro version)
+	* twitter:app:country
+	* twitter:app:name:iphone
+	* twitter:app:id:iphone
+	* twitter:app:url:iphone
+	* twitter:app:name:ipad
+	* twitter:app:id:ipad
+	* twitter:app:url:ipad
+	* twitter:app:name:googleplay
+	* twitter:app:id:googleplay
+	* twitter:app:url:googleplay
 
 <blockquote>
 <p><a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> plugin (version 2.6.6 and up) is required to use the WPSSO AM extension. You can use the <em>Free version</em> of WPSSO AM with either WPSSO Free or Pro, but the <strong><a href="http://surniaulula.com/extend/plugins/wpsso-am/">WPSSO AM Pro version</a> requires the use of <a href="http://surniaulula.com/extend/plugins/wpsso/">WPSSO Pro</a></strong> (ie. you must purchase WPSSO Pro as well).</p>
