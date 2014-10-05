@@ -51,14 +51,14 @@ WPSSO extension to provide Apple Store (iTunes) and Google Play App meta tags fo
 
 * **Twitter App Card Meta Tags** (Pro version)
 	* twitter:app:country
-	* twitter:app:name:iphone
 	* twitter:app:id:iphone
-	* twitter:app:url:iphone
-	* twitter:app:name:ipad
 	* twitter:app:id:ipad
-	* twitter:app:url:ipad
-	* twitter:app:name:googleplay
 	* twitter:app:id:googleplay
+	* twitter:app:name:iphone
+	* twitter:app:name:ipad
+	* twitter:app:name:googleplay
+	* twitter:app:url:iphone
+	* twitter:app:url:ipad
 	* twitter:app:url:googleplay
 
 <blockquote>
