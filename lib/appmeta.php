@@ -50,6 +50,7 @@ if ( ! class_exists( 'WpssoAmAppmeta' ) ) {
 			$this->plugin_filepath = $plugin_filepath;
 			$this->p->util->add_plugin_filters( $this, array( 
 				'get_defaults' => 1,
+				'get_meta_defaults' => 1,
 			) );
 			if ( is_admin() ) {
 				$this->p->util->add_plugin_filters( $this, array( 
@@ -221,6 +222,22 @@ if ( ! class_exists( 'WpssoAmAppmeta' ) ) {
 			$opts_def = array_merge( $opts_def, self::$cf['opt']['defaults'] );
 			$opts_def = $this->p->util->push_add_to_options( $opts_def, array( 'am_ws' => 'frontend' ) );
 			$opts_def = $this->p->util->push_add_to_options( $opts_def, array( 'am_ap' => 'frontend' ) );
+			return $opts_def;
+		}
+
+		public function filter_get_meta_defaults( $opts_def ) {
+			$opts_def = array_merge( $opts_def, array(
+				'am_ap_ast' => -1,
+				'am_iphone_app_id' => '',
+				'am_iphone_app_name' => '',
+				'am_iphone_app_url' => '',
+				'am_ipad_app_id' => '',
+				'am_ipad_app_name' => '',
+				'am_ipad_app_url' => '',
+				'am_gplay_app_id' => '',
+				'am_gplay_app_name' => '',
+				'am_gplay_app_url' => '',
+			) );
 			return $opts_def;
 		}
 
