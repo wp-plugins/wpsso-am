@@ -265,10 +265,10 @@ if ( ! class_exists( 'WpssoAmAppmeta' ) ) {
 				case 'am_gplay_app_id':
 				case 'am_gplay_app_name':
 				case 'am_gplay_app_url':
-					return 'okblank';
+					return 'ok_blank';
 					break;
 				case 'am_ap_ast':
-					return 'notblank';
+					return 'not_blank';
 					break;
 			}
 			return $type;
