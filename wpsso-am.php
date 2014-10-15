@@ -67,11 +67,11 @@ if ( ! class_exists( 'WpssoAm' ) ) {
 			$shortname = WpssoAmConfig::$cf['plugin']['wpssoam']['short'];
 
 			if ( $this->has_min_ver === false ) {
+				$wpsso_version = $this->p->cf['plugin']['wpsso']['version'];
 				$this->p->debug->log( $shortname.' requires WPSSO version '.$this->min_version.' or newer ('.$wpsso_version.' installed)' );
 				if ( is_admin() )
 					$this->p->notice->err( $shortname.' v'.WpssoAmConfig::$cf['plugin']['wpssoam']['version'].
-					' requires WPSSO v'.$this->min_version.' or newer (version '.
-					$this->p->cf['plugin']['wpsso']['version'].' is currently installed).', true );
+					' requires WPSSO v'.$this->min_version.' or newer ('.$wpsso_version.' is currently installed).', true );
 				return;
 			}
 
