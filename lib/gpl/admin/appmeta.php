@@ -30,7 +30,7 @@ if ( ! class_exists( 'WpssoAmGplAdminAppmeta' ) ) {
 			$new_tabs = array();
 			foreach ( $tabs as $key => $val ) {
 				$new_tabs[$key] = $val;
-				if ( $key === 'media' )	// insert the appmeta tab after the header tab
+				if ( $key === 'media' )
 					$new_tabs['appmeta'] = 'App Product';
 			}
 			return $new_tabs;
