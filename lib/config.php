@@ -225,7 +225,6 @@ if ( ! class_exists( 'WpssoAmConfig' ) ) {
 		public static function set_constants( $plugin_filepath ) { 
 			$lca = 'wpssoam';
 			$slug = self::$cf['plugin'][$lca]['slug'];
-			$version = self::$cf['plugin'][$lca]['version'];
 
 			define( 'WPSSOAM_FILEPATH', $plugin_filepath );						
 			define( 'WPSSOAM_PLUGINDIR', trailingslashit( plugin_dir_path( $plugin_filepath ) ) );
