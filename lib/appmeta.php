@@ -134,11 +134,11 @@ if ( ! class_exists( 'WpssoAmAppmeta' ) ) {
 					(as an alternative to using a mobile browser).';
 					break;
 				case 'tooltip-side-app-product-options':
-					$text = 'An "App Product" tab can be added to the Social Settings metabox on Posts, Pages, and 
+					$text = 'An <em>App Product</em> tab can be added to the Social Settings metabox on Posts, Pages, and 
 					custom post types, allowing you to enter specific information about a mobile App.';
 					break;
 				case 'tooltip-side-twitter-app-card':
-					$text = 'The "App Product" information is used to create meta tags for Twitter\'s App Card
+					$text = 'The <em>App Product</em> information is used to create meta tags for Twitter\'s App Card
 					(instead of generating a Product Card, for example) ';
 					break;
 			}
@@ -204,7 +204,7 @@ if ( ! class_exists( 'WpssoAmAppmeta' ) ) {
 					break;
 				case 'info-appmeta-general':
 					$text = '<blockquote style="margin-top:0;margin-bottom:10px;">
-					<p>An "App Product" tab can be added to the Social Settings metabox on Posts, Pages, and custom post types,
+					<p>An <em>App Product</em> tab can be added to the Social Settings metabox on Posts, Pages, and custom post types,
 					allowing you to enter specific information about a mobile App. This information is then used to create 
 					meta tags for Twitter\'s App Card (instead of generating a Product Card, for example).
 					</blockquote>';
