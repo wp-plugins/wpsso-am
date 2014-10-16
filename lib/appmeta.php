@@ -54,11 +54,11 @@ if ( ! class_exists( 'WpssoAmAppmeta' ) ) {
 			) );
 			if ( is_admin() ) {
 				$this->p->util->add_plugin_filters( $this, array( 
+					'option_type' => 2,
 					'tooltip_side' => 2,            // tooltip messages for side boxes
 					'tooltip_postmeta' => 3,        // tooltip messages for post social settings
 					'messages_info' => 2,		// info messages filter
-					'messages' => 2,		// info messages filter
-					'option_type' => 2,
+					'messages' => 2,		// messages filter
 				) );
 				$this->p->util->add_plugin_filters( $this, array( 
 					'status_gpl_features' => 3,
@@ -66,6 +66,62 @@ if ( ! class_exists( 'WpssoAmAppmeta' ) ) {
 				), 10, 'wpssoam' );
 			} elseif ( ! empty( $this->p->options['am_ws_itunes_app_id'] ) )
 				$this->p->util->add_plugin_filters( $this, array( 'meta_name' => 2 ) );
+		}
+
+		public function filter_get_defaults( $opts_def ) {
+			$opts_def = array_merge( $opts_def, self::$cf['opt']['defaults'] );
+			$opts_def = $this->p->util->push_add_to_options( $opts_def, array( 'am_ws' => 'frontend' ) );
+			$opts_def = $this->p->util->push_add_to_options( $opts_def, array( 'am_ap' => 'frontend' ) );
+			return $opts_def;
+		}
+
+		public function filter_get_meta_defaults( $opts_def ) {
+			$opts_def = array_merge( $opts_def, array(
+				'am_ap_ast' => -1,
+				'am_iphone_app_id' => '',
+				'am_iphone_app_name' => '',
+				'am_iphone_app_url' => '',
+				'am_ipad_app_id' => '',
+				'am_ipad_app_name' => '',
+				'am_ipad_app_url' => '',
+				'am_gplay_app_id' => '',
+				'am_gplay_app_name' => '',
+				'am_gplay_app_url' => '',
+			) );
+			return $opts_def;
+		}
+
+		public function filter_option_type( $type, $key ) {
+			if ( ! empty( $type ) )
+				return $type;
+
+			// remove localization for more generic match
+			if ( strpos( $key, '#' ) !== false )
+				$key = preg_replace( '/#.*$/', '', $key );
+
+			switch ( $key ) {
+				case 'am_iphone_app_id':
+				case 'am_ipad_app_id':
+					return 'numeric';
+					break;
+				// text strings that can be blank
+				case 'am_ws_itunes_app_id':
+				case 'am_ws_itunes_app_aff':
+				case 'am_ws_itunes_app_arg':
+				case 'am_iphone_app_name':
+				case 'am_iphone_app_url':
+				case 'am_ipad_app_name':
+				case 'am_ipad_app_url':
+				case 'am_gplay_app_id':
+				case 'am_gplay_app_name':
+				case 'am_gplay_app_url':
+					return 'ok_blank';
+					break;
+				case 'am_ap_ast':
+					return 'not_blank';
+					break;
+			}
+			return $type;
 		}
 
 		public function filter_tooltip_side( $text, $idx ) {
@@ -179,14 +235,14 @@ if ( ! class_exists( 'WpssoAmAppmeta' ) ) {
 							break;
 						case 'tooltip-am_ws_itunes_app_arg':
 							$text = 'A string, that may include any one or more inline variables, to provide context to your 
-							website\'s mobile App.  If the user has your mobile App installed, this string may allow them 
+							website\'s mobile App. If the user has your mobile App installed, this string may allow them 
 							to jump from your website, to the same content in the mobile App.';
 							break;
 						case 'tooltip-am_ap_ast':
 							$text = 'The App Store country providing your App.';
 							break;
 						case 'tooltip-am_ap_add_to':
-							$text = 'Include the "App Product" tab in the Social Settings metabox on Posts, Pages, etc.';
+							$text = 'Include the <em>App Product</em> tab in the Social Settings metabox on Posts, Pages, etc.';
 							break;
 					}
 					break;
@@ -216,62 +272,6 @@ if ( ! class_exists( 'WpssoAmAppmeta' ) ) {
 				$meta_name['apple-itunes-app'] .= ', app-argument='.$this->p->options['am_ws_itunes_app_arg'];
 
 			return $meta_name;
-		}
-
-		public function filter_get_defaults( $opts_def ) {
-			$opts_def = array_merge( $opts_def, self::$cf['opt']['defaults'] );
-			$opts_def = $this->p->util->push_add_to_options( $opts_def, array( 'am_ws' => 'frontend' ) );
-			$opts_def = $this->p->util->push_add_to_options( $opts_def, array( 'am_ap' => 'frontend' ) );
-			return $opts_def;
-		}
-
-		public function filter_get_meta_defaults( $opts_def ) {
-			$opts_def = array_merge( $opts_def, array(
-				'am_ap_ast' => -1,
-				'am_iphone_app_id' => '',
-				'am_iphone_app_name' => '',
-				'am_iphone_app_url' => '',
-				'am_ipad_app_id' => '',
-				'am_ipad_app_name' => '',
-				'am_ipad_app_url' => '',
-				'am_gplay_app_id' => '',
-				'am_gplay_app_name' => '',
-				'am_gplay_app_url' => '',
-			) );
-			return $opts_def;
-		}
-
-		public function filter_option_type( $type, $key ) {
-			if ( ! empty( $type ) )
-				return $type;
-
-			// remove localization for more generic match
-			if ( strpos( $key, '#' ) !== false )
-				$key = preg_replace( '/#.*$/', '', $key );
-
-			switch ( $key ) {
-				case 'am_iphone_app_id':
-				case 'am_ipad_app_id':
-					return 'numeric';
-					break;
-				// text strings that can be blank
-				case 'am_ws_itunes_app_id':
-				case 'am_ws_itunes_app_aff':
-				case 'am_ws_itunes_app_arg':
-				case 'am_iphone_app_name':
-				case 'am_iphone_app_url':
-				case 'am_ipad_app_name':
-				case 'am_ipad_app_url':
-				case 'am_gplay_app_id':
-				case 'am_gplay_app_name':
-				case 'am_gplay_app_url':
-					return 'ok_blank';
-					break;
-				case 'am_ap_ast':
-					return 'not_blank';
-					break;
-			}
-			return $type;
 		}
 
 		public function filter_status_gpl_features( $features, $lca, $info ) {
