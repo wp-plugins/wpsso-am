@@ -125,9 +125,6 @@ if ( ! class_exists( 'WpssoAmAppmeta' ) ) {
 		}
 
 		public function filter_tooltip_side( $text, $idx ) {
-			$lca = $this->p->cf['lca'];
-			$short = $this->p->cf['plugin'][$lca]['short'];
-			$short_pro = $short.' Pro';
 			switch ( $idx ) {
 				case 'tooltip-side-website-app-meta':
 					$text = 'Creates a banner advertisement in Apple\'s mobile Safari for your website\'s mobile App 
@@ -185,9 +182,6 @@ if ( ! class_exists( 'WpssoAmAppmeta' ) ) {
 		}
 
 		public function filter_messages_info( $text, $idx ) {
-			$lca =  $this->p->cf['lca'];
-			$short = $this->p->cf['plugin'][$lca]['short'];
-			$short_pro = $short.' Pro';
 			switch ( $idx ) {
 				case 'info-webapp-general':
 					$text = '<blockquote style="margin-top:0;margin-bottom:10px;">
