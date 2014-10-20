@@ -22,8 +22,8 @@ if ( ! class_exists( 'WpssoAmConfig' ) ) {
 					'slug' => 'wpsso-am',
 					'base' => 'wpsso-am/wpsso-am.php',
 					'img' => array(
-						'icon-small' => '//ps.w.org/wpsso-am/assets/icon-128x128.png?rev=',
-						'icon-medium' => '//ps.w.org/wpsso-am/assets/icon-256x256.png?rev=',
+						'icon-small' => 'https://ps.w.org/wpsso-am/assets/icon-128x128.png?rev=',
+						'icon-medium' => 'https://ps.w.org/wpsso-am/assets/icon-256x256.png?rev=',
 					),
 					'url' => array(
 						'download' => 'https://wordpress.org/plugins/wpsso-am/',
