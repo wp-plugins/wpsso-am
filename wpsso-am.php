@@ -6,7 +6,7 @@
  * Author URI: http://surniaulula.com/
  * License: GPLv3
  * License URI: http://www.gnu.org/licenses/gpl.txt
- * Description: WPSSO extension to provide Apple Store (iTunes) and Google Play App meta tags for Apple's mobile Safari and Twitter's App Card.
+ * Description: WPSSO extension to provide Apple Store / iTunes and Google Play App meta tags for Apple's mobile Safari and Twitter's App Card.
  * Requires At Least: 3.0
  * Tested Up To: 4.0
  * Version: 1.0.0.1
