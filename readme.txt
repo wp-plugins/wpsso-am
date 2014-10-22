@@ -1,4 +1,4 @@
-=== WPSSO App Meta - Apple Store (iTunes) iPhone, iPad, and Google Play App Meta Tags ===
+=== WPSSO App Meta - for Apple's mobile Safari and Twitter App Cards ===
 Contributors: jsmoriss
 Donate Link: http://surniaulula.com/extend/plugins/wpsso-am/
 Tags: wpsso, app, iphone, ipad, googleplay, meta, tags, itunes
@@ -8,7 +8,7 @@ Requires At Least: 3.0
 Tested Up To: 4.0
 Stable Tag: 1.0.0.1
 
-WPSSO extension to provide Apple Store (iTunes) and Google Play App meta tags for Apple's mobile Safari and Twitter's App Card.
+WPSSO extension to provide Apple Store / iTunes and Google Play App meta tags for Apple's mobile Safari and Twitter's App Card.
 
 == Description ==
 
