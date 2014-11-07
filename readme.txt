@@ -1,6 +1,6 @@
 === WPSSO App Meta - for Apple's mobile Safari and Twitter's App Card ===
 Contributors: jsmoriss
-Donate Link: http://surniaulula.com/extend/plugins/wpsso-am/
+Donate Link: https://surniaulula.com/extend/plugins/wpsso-am/
 Tags: wpsso, app, iphone, ipad, googleplay, meta, tags, itunes
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
