@@ -87,16 +87,20 @@ WPSSO extension to provide Apple Store / iTunes and Google Play App meta tags fo
 
 == Changelog ==
 
-= Version 1.0.0.1 =
+= Version 1.1 =
 
 * **Bugfixes**
 	* *None*
-* **Enhancements**
-	* Tested with WPSSO v2.6.9.1
+* **Improvements**
+	* *None*
+* **New Features**
+	* *None*
+
+Tested with WPSSO version 2.7.
 
 == Upgrade Notice ==
 
-= 1.0.0.1 =
+= 1.1 =
 
-Tested with WPSSO v2.6.9.1.
+Tested with WPSSO version 2.7.
 
