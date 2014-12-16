@@ -62,7 +62,7 @@ WPSSO extension to provide Apple Store / iTunes and Google Play App meta tags fo
 	* twitter:app:url:googleplay
 
 <blockquote>
-<p><a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> plugin (version 2.6.9.1 and up) is required to use the WPSSO AM extension. You can use the <em>Free version</em> of WPSSO AM with either WPSSO Free or Pro, but the <a href="http://surniaulula.com/extend/plugins/wpsso-am/">WPSSO AM Pro version</a> requires the use of <a href="http://surniaulula.com/extend/plugins/wpsso/">WPSSO Pro</a> as well.</p>
+<p><a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> plugin (version 2.7.2 and up) is required to use the WPSSO AM extension. You can use the <em>Free version</em> of WPSSO AM with either WPSSO Free or Pro, but the <a href="http://surniaulula.com/extend/plugins/wpsso-am/">WPSSO AM Pro version</a> requires the use of <a href="http://surniaulula.com/extend/plugins/wpsso/">WPSSO Pro</a> as well.</p>
 </blockquote>
 
 == Installation ==
@@ -87,6 +87,15 @@ WPSSO extension to provide Apple Store / iTunes and Google Play App meta tags fo
 
 == Changelog ==
 
+= Version 1.1.1 =
+
+* **Bugfixes**
+	* *None*
+* **Improvements**
+	* Added a check on the admin side to make sure WPSSO is installed and active.
+* **New Features**
+	* *None*
+
 = Version 1.1 =
 
 * **Bugfixes**
@@ -99,6 +108,10 @@ WPSSO extension to provide Apple Store / iTunes and Google Play App meta tags fo
 Tested with WPSSO version 2.7.
 
 == Upgrade Notice ==
+
+= 1.1.1 =
+
+Added a check on the admin side to make sure the WPSSO plugin is installed and active.
 
 = 1.1 =
 
