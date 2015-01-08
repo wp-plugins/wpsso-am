@@ -87,6 +87,15 @@ WPSSO extension to provide Apple Store / iTunes and Google Play App meta tags fo
 
 == Changelog ==
 
+= Version 1.1.2 =
+
+* **Bugfixes**
+	* *None*
+* **Improvements**
+	* Refactored code to rename the $addons array variable to $mods for WPSSO v2.7.5.
+* **New Features**
+	* *None*
+
 = Version 1.1.1 =
 
 * **Bugfixes**
@@ -96,24 +105,9 @@ WPSSO extension to provide Apple Store / iTunes and Google Play App meta tags fo
 * **New Features**
 	* *None*
 
-= Version 1.1 =
-
-* **Bugfixes**
-	* *None*
-* **Improvements**
-	* *None*
-* **New Features**
-	* *None*
-
-Tested with WPSSO version 2.7.
-
 == Upgrade Notice ==
 
 = 1.1.1 =
 
 Added a check on the admin side to make sure the WPSSO plugin is installed and active.
-
-= 1.1 =
-
-Update for WPSSO version 2.7.
 
