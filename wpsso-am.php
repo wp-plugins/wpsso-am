@@ -9,7 +9,7 @@
  * Description: WPSSO extension to provide Apple Store / iTunes and Google Play App meta tags for Apple's mobile Safari and Twitter's App Card.
  * Requires At Least: 3.0
  * Tested Up To: 4.1
- * Version: 1.1.2
+ * Version: 1.1.3
  * 
  * Copyright 2014 - Jean-Sebastien Morisset - http://surniaulula.com/
 */
@@ -22,7 +22,7 @@ if ( ! class_exists( 'WpssoAm' ) ) {
 	class WpssoAm {
 
 		private $opt_version = 'am7';
-		private $min_version = '2.7.5';
+		private $min_version = '2.8.1';
 		private $has_min_ver = true;
 
 		public $p;				// class object variables
@@ -39,6 +39,7 @@ if ( ! class_exists( 'WpssoAm' ) ) {
 				add_action( 'admin_init', array( &$this, 'check_for_wpsso' ) );
 
 			add_action( 'wpsso_init_options', array( &$this, 'init_options' ), 10 );
+			add_action( 'wpsso_init_objects', array( &$this, 'init_objects' ), 10 );
 			add_action( 'wpsso_init_plugin', array( &$this, 'init_plugin' ), 10 );
 		}
 
@@ -58,8 +59,7 @@ if ( ! class_exists( 'WpssoAm' ) ) {
 			if ( ! class_exists( 'Wpsso' ) || ! in_array( 'wpsso/wpsso.php', $active_plugins ) ) {
 				require_once( ABSPATH.'wp-admin/includes/plugin.php' );
 				deactivate_plugins( WPSSOAM_PLUGINBASE );
-				wp_die( '<p>'. sprintf( __( 'WPSSO AM requires the use of WPSSO &mdash; 
-					Please install and activate the WPSSO plugin before re-activating this extension.', WPSSOAM_TEXTDOM ) ).'</p>' );
+				wp_die( '<p>'. sprintf( __( 'WPSSO AM requires the use of WPSSO &mdash; Please install and activate the WPSSO plugin before re-activating this extension.', WPSSOAM_TEXTDOM ) ).'</p>' );
 			}
 		}
 
@@ -67,37 +67,37 @@ if ( ! class_exists( 'WpssoAm' ) ) {
 		public function init_options() {
 			global $wpsso;
 			$this->p =& $wpsso;
-
 			if ( $this->has_min_ver === false )
 				return;
-
 			$this->p->is_avail['am'] = true;
 			$this->p->is_avail['admin']['appmeta'] = true;
+		}
+
+		public function init_objects() {
+			WpssoAmConfig::load_lib( false, 'appmeta' );
+			$this->p->appmeta = new WpssoAmAppmeta( $this->p, __FILE__ );
 		}
 
 		// this action is executed once all class objects have been defined and modules have been loaded
 		public function init_plugin() {
 			$shortname = WpssoAmConfig::$cf['plugin']['wpssoam']['short'];
-
 			if ( $this->has_min_ver === false ) {
 				$wpsso_version = $this->p->cf['plugin']['wpsso']['version'];
-				$this->p->debug->log( $shortname.' requires WPSSO version '.$this->min_version.' or newer ('.$wpsso_version.' installed)' );
+				$this->p->debug->log( $shortname.' requires WPSSO version '.
+					$this->min_version.' or newer ('.$wpsso_version.' installed)' );
 				if ( is_admin() )
 					$this->p->notice->err( $shortname.' v'.WpssoAmConfig::$cf['plugin']['wpssoam']['version'].
-					' requires WPSSO v'.$this->min_version.' or newer ('.$wpsso_version.' is currently installed).', true );
+						' requires WPSSO v'.$this->min_version.
+						' or newer ('.$wpsso_version.' is currently installed).', true );
 				return;
 			}
-
 			if ( is_admin() && 
 				! empty( $this->p->options['plugin_wpssoam_tid'] ) && 
 				! $this->p->check->aop( 'wpssoam', false ) ) {
-				$this->p->notice->inf( 'An Authentication ID was entered for '.$shortname.', 
-				but the Pro version is not installed yet &ndash; 
-				don\'t forget to update the '.$shortname.' plugin to install the Pro version.', true );
+				$this->p->notice->inf( 'An Authentication ID was entered for '.
+					$shortname.', but the Pro version is not installed yet &ndash; don\'t forget to update the '.
+					$shortname.' plugin to install the Pro version.', true );
 			}
-
-			WpssoAmConfig::load_lib( false, 'appmeta' );
-			$this->p->appmeta = new WpssoAmAppmeta( $this->p, __FILE__ );
 		}
 
 		public function filter_installed_version( $version ) {
