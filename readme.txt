@@ -80,6 +80,8 @@ WPSSO extension to provide Apple Store / iTunes and Google Play App meta tags fo
 
 == Other Notes ==
 
+= Additional Documentation =
+
 == Screenshots ==
 
 01. The WPSSO AM Settings Page
