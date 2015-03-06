@@ -83,27 +83,18 @@ WPSSO extension to provide Apple Store / iTunes and Google Play App meta tags fo
 
 == Changelog ==
 
-= Version 1.1.3 =
+= Version 1.1.4 =
 
 * **Bugfixes**
-	* *None*
+	* Improved the validation of dependencies by checking for the Wpsso class only.
 * **Improvements**
-	* Moved the WpssoAmAppmeta class object instantiation to the new 'wpsso_init_objects' action.
-* **New Features**
 	* *None*
-
-= Version 1.1.2 =
-
-* **Bugfixes**
-	* *None*
-* **Improvements**
-	* Refactored code to rename the $addons array variable to $mods for WPSSO v2.7.5.
 * **New Features**
 	* *None*
 
 == Upgrade Notice ==
 
-= 1.1.3 =
+= 1.1.4 =
 
-Moved the WpssoAmAppmeta class object instantiation to the new 'wpsso_init_objects' action.
+Improved the validation of dependencies by checking for the Wpsso class only.
 
