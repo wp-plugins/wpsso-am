@@ -9,7 +9,7 @@
  * Description: WPSSO extension to provide Apple Store / iTunes and Google Play App meta tags for Apple's mobile Safari and Twitter's App Card.
  * Requires At Least: 3.0
  * Tested Up To: 4.1
- * Version: 1.1.3
+ * Version: 1.1.4
  * 
  * Copyright 2014 - Jean-Sebastien Morisset - http://surniaulula.com/
 */
@@ -55,8 +55,7 @@ if ( ! class_exists( 'WpssoAm' ) ) {
 		}
 
 		public function check_for_wpsso() {
-			$active_plugins = get_option( 'active_plugins', array() );
-			if ( ! class_exists( 'Wpsso' ) || ! in_array( 'wpsso/wpsso.php', $active_plugins ) ) {
+			if ( ! class_exists( 'Wpsso' ) ) {
 				require_once( ABSPATH.'wp-admin/includes/plugin.php' );
 				deactivate_plugins( WPSSOAM_PLUGINBASE );
 				wp_die( '<p>'. sprintf( __( 'WPSSO AM requires the use of WPSSO &mdash; Please install and activate the WPSSO plugin before re-activating this extension.', WPSSOAM_TEXTDOM ) ).'</p>' );
