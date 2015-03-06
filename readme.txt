@@ -86,7 +86,7 @@ WPSSO extension to provide Apple Store / iTunes and Google Play App meta tags fo
 = Version 1.1.4 =
 
 * **Bugfixes**
-	* Improved the validation of dependencies by checking for the Wpsso class only.
+	* Fixed validation of network-activated plugin dependencies by checking for the Wpsso class only.
 * **Improvements**
 	* *None*
 * **New Features**
@@ -96,5 +96,5 @@ WPSSO extension to provide Apple Store / iTunes and Google Play App meta tags fo
 
 = 1.1.4 =
 
-Improved the validation of dependencies by checking for the Wpsso class only.
+Fixed validation of network-activated plugin dependencies by checking for the Wpsso class only.
 
