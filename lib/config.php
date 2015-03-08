@@ -246,7 +246,7 @@ if ( ! class_exists( 'WpssoAmConfig' ) ) {
 				if ( file_exists( $filepath ) ) {
 					require_once( $filepath );
 					if ( empty( $classname ) )
-						return 'wpssoam'.str_replace( '/', '', $filespec );
+						return 'wpssoam'.str_replace( array( '/', '-' ), '', $filespec );
 					else return $classname;
 				}
 			}
