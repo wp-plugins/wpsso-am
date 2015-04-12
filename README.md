@@ -8,7 +8,7 @@
 <strong>License URI</strong>: http://www.gnu.org/licenses/gpl.txt<br/>
 <strong>Requires At Least</strong>: 3.0<br/>
 <strong>Tested Up To</strong>: 4.1.1<br/>
-<strong>Stable Tag</strong>: 1.2<br/>
+<strong>Stable Tag</strong>: 1.3<br/>
 </blockquote>
 
 <p>
@@ -102,7 +102,7 @@ WPSSO extension to provide Apple Store / iTunes and Google Play App meta tags fo
 	* *None*
 * **Improvements**
 	* Moved the minimum version checks to a new `WpssoAm::min_version_warning()` method.
-	* Refactored code for the new "WPSSO Pro Update Manager (WPSSO UM)" extension plugin.
+	* Refactored code for the new "WPSSO Pro Update Manager (WPSSO UM)" *Free* extension plugin.
 * **Bugfixes**
 	* *None*
 
@@ -117,6 +117,10 @@ WPSSO extension to provide Apple Store / iTunes and Google Play App meta tags fo
 	* *None*
 
 <h3>Upgrade Notice</h3>
+
+<h4>1.3</h4>
+
+Refactored code for the new "WPSSO Pro Update Manager (WPSSO UM)" Free extension plugin.
 
 <h4>1.2</h4>
 
