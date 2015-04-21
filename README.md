@@ -8,7 +8,7 @@
 <strong>License URI</strong>: http://www.gnu.org/licenses/gpl.txt<br/>
 <strong>Requires At Least</strong>: 3.0<br/>
 <strong>Tested Up To</strong>: 4.2<br/>
-<strong>Stable Tag</strong>: 1.3.1<br/>
+<strong>Stable Tag</strong>: 1.3<br/>
 </blockquote>
 
 <p>
@@ -103,7 +103,7 @@ WPSSO extension to provide Apple Store / iTunes and Google Play App meta tags fo
 * **Improvements**
 	* Replaced self-deactivation when WPSSO is not found by a warning notice instead.
 * **Bugfixes**
-	* *None*
+	* Fixed variable references to a deprecated 'plugin_display' option.
 
 <h4>Version 1.3 (2015/04/12)</h4>
 

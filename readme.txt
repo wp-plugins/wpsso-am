@@ -6,7 +6,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.0
 Tested Up To: 4.2
-Stable Tag: 1.3.1
+Stable Tag: 1.3
 
 WPSSO extension to provide Apple Store / iTunes and Google Play App meta tags for Apple's mobile Safari and Twitter's App Card.
 
@@ -95,7 +95,7 @@ WPSSO extension to provide Apple Store / iTunes and Google Play App meta tags fo
 * **Improvements**
 	* Replaced self-deactivation when WPSSO is not found by a warning notice instead.
 * **Bugfixes**
-	* *None*
+	* Fixed variable references to a deprecated 'plugin_display' option.
 
 = Version 1.3 (2015/04/12) =
 
